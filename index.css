@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+}
+
+.botones-plantillas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.botones-plantillas button,
+#formularioServipag button,
+#formularioFintoc button,
+#formularioTransferencias button,
+#formularioWebpay button {
+    margin: 0 10px;
+    background-color: green;
+    color: yellow;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botones-plantillas button:hover,
+.botones-plantillas button:focus,
+#formularioServipag button:hover,
+#formularioServipag button:focus,
+#formularioFintoc button:hover,
+#formularioFintoc button:focus,
+#formularioTransferencias button:hover,
+#formularioTransferencias button:focus,
+#formularioWebpay button:hover,
+#formularioWebpay button:focus {
+    background-color: yellow;
+    color: green;
+    transform: scale(1.1);
+}
+
+#formularioServipag,
+#formularioFintoc,
+#formularioTransferencias,
+#formularioWebpay {
+    display: none;
+    text-align: center; /* Centra el contenido del formulario */
+    margin: 20px auto; /* Centra el formulario horizontalmente */
+    max-width: 600px; /* Limita el ancho del formulario */
+}
+
+#plantillaGenerada {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    white-space: pre-wrap;
+    text-align: center;
+}
+
+.titulo{
+    text-align: center;
+}
+
+#plantillaGenerada + .copiar { /* Selecciona el botón "Copiar Plantilla" */
+    display: block; /* Asegura que el botón ocupe toda la línea */
+    margin: 20px auto; /* Centra el botón horizontalmente */
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#plantillaGenerada + .copiar:hover,
+#plantillaGenerada + .copiar:focus {
+    background-color: white;
+    color: blue;
+    transform: scale(1.1);
+}

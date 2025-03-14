@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Alexander Lopez">
+    <meta name="description" content="plantillas directas de s3">
+    <link rel="shortcut icon" href="plantilla.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <title>Plantillas S3</title>
+</head>
+<body>
+    
+    <h1 class="titulo">Generador de Plantillas de S3</h1>
+
+    <div class="botones-plantillas">
+        <button onclick="mostrarPlantillaServipag()" class="botones-plantillas-ser">Servipag</button>
+        <button onclick="mostrarPlantillaFintoc()" class="botones-plantillas-fin">Fintoc</button>
+        <button onclick="mostrarPlantillaTransferencias()" class="botones-plantillas-tef">Transferencias</button>
+        <button onclick="mostrarPlantillaWebpay()" class="botones-plantillas-web">Webpay</button>
+    </div>
+
+    <div id="formularioServipag" style="display: none;">
+        <h2>Plantilla Servipag</h2>
+        <label for="datosServipag">Datos:</label><br>
+        <textarea id="datosServipag" rows="5" cols="50"></textarea><br><br>
+        <button onclick="generarPlantillaServipag()">Generar Plantilla</button>
+    </div>
+
+    <div id="formularioFintoc" style="display: none;">
+        <h2>Plantilla Fintoc</h2>
+        <label for="datosFintoc">Datos:</label><br>
+        <textarea id="datosFintoc" rows="5" cols="50"></textarea><br><br>
+        <button onclick="generarPlantillaFintoc()">Generar Plantilla</button>
+    </div>
+
+    <div id="formularioTransferencias" style="display: none;">
+        <h2>Plantilla Transferencias</h2>
+        <label for="datosTransferencias">Datos:</label><br>
+        <textarea id="datosTransferencias" rows="10" cols="50"></textarea><br><br>
+        <button onclick="generarPlantillaTransferencias()">Generar Plantilla</button>
+    </div>
+
+    <div id="formularioWebpay" style="display: none;">
+        <h2>Plantilla Webpay</h2>
+        <label for="datosWebpay">Datos:</label><br>
+        <textarea id="datosWebpay" rows="5" cols="50"></textarea><br><br>
+        <button onclick="generarPlantillaWebpay()">Generar Plantilla</button>
+    </div>
+
+    <div id="plantillaGenerada"></div>
+    <button onclick="copiarPlantilla()" class="copiar">Copiar Plantilla</button>
+    
+    <script src="index.js"></script>
+</body>
+</html>
