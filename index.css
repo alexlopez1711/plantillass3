@@ -12,7 +12,9 @@ body {
 #formularioServipag button,
 #formularioFintoc button,
 #formularioTransferencias button,
-#formularioWebpay button {
+#formularioWebpay button,
+#formularioLog button,
+#formularioCompraAqui button {
     margin: 0 10px;
     background-color: green;
     color: yellow;
@@ -31,7 +33,11 @@ body {
 #formularioTransferencias button:hover,
 #formularioTransferencias button:focus,
 #formularioWebpay button:hover,
-#formularioWebpay button:focus {
+#formularioWebpay button:focus,
+#formularioLog button:hover,
+#formularioLog button:focus,
+#formularioCompraAqui button:hover,
+#formularioCompraAqui button:focus{
     background-color: yellow;
     color: green;
     transform: scale(1.1);
@@ -40,7 +46,9 @@ body {
 #formularioServipag,
 #formularioFintoc,
 #formularioTransferencias,
-#formularioWebpay {
+#formularioWebpay,
+#formularioLog,
+#formularioCompraAqui {
     display: none;
     text-align: center; /* Centra el contenido del formulario */
     margin: 20px auto; /* Centra el formulario horizontalmente */
